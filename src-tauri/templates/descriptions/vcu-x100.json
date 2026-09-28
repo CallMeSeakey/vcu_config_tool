@@ -1,0 +1,115 @@
+{
+  "id": "vcu-model-x100",
+  "name": {
+    "zh-CN": "VCU-X100 动力控制器",
+    "en-US": "VCU-X100 Powertrain Controller"
+  },
+  "icon_type": "ecu-default",
+  "summary": {
+    "zh-CN": "高配动力域控制单元，5组连接器共66路IO，支持双电机驱动、CAN-FD与百兆以太网",
+    "en-US": "Flagship powertrain ECU with 5 connectors (66 IO pins), dual motor drivers, CAN-FD and Ethernet."
+  },
+  "connectors": [
+    {
+      "id": "conn-jp1",
+      "name": "JP1",
+      "pin_count": 12,
+      "pins": [
+        { "pin_no": "1", "label": "JP1.1", "is_power": true, "supported_functions": ["VBB", "GND"], "default_function": "VBB", "grid_row": 1, "grid_col": 1 },
+        { "pin_no": "2", "label": "JP1.2", "is_power": true, "supported_functions": ["VBB", "GND"], "default_function": "GND", "grid_row": 1, "grid_col": 2 },
+        { "pin_no": "3", "label": "JP1.3", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 1, "grid_col": 3 },
+        { "pin_no": "4", "label": "JP1.4", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 1, "grid_col": 4 },
+        { "pin_no": "5", "label": "JP1.5", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 2, "grid_col": 1 },
+        { "pin_no": "6", "label": "JP1.6", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 2, "grid_col": 2 },
+        { "pin_no": "7", "label": "JP1.7", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 2, "grid_col": 3 },
+        { "pin_no": "8", "label": "JP1.8", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 2, "grid_col": 4 },
+        { "pin_no": "9", "label": "JP1.9", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 3, "grid_col": 1 },
+        { "pin_no": "10", "label": "JP1.10", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 3, "grid_col": 2 },
+        { "pin_no": "11", "label": "JP1.11", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 3, "grid_col": 3 },
+        { "pin_no": "12", "label": "JP1.12", "is_power": false, "supported_functions": ["NONE", "DOH", "DOL", "PWMH", "HBRIDGE_A", "HBRIDGE_B"], "default_function": "NONE", "grid_row": 3, "grid_col": 4 }
+      ]
+    },
+    {
+      "id": "conn-jp2",
+      "name": "JP2",
+      "pin_count": 8,
+      "pins": [
+        { "pin_no": "1", "label": "JP2.1", "is_power": true, "supported_functions": ["AGND"], "default_function": "AGND", "grid_row": 1, "grid_col": 1 },
+        { "pin_no": "2", "label": "JP2.2", "is_power": false, "supported_functions": ["NONE", "AIU", "AIR", "AII", "PIH"], "default_function": "NONE", "grid_row": 1, "grid_col": 2 },
+        { "pin_no": "3", "label": "JP2.3", "is_power": false, "supported_functions": ["NONE", "AIU", "AIR", "AII", "PIH"], "default_function": "NONE", "grid_row": 1, "grid_col": 3 },
+        { "pin_no": "4", "label": "JP2.4", "is_power": false, "supported_functions": ["NONE", "AIU", "AIR", "AII", "PIH"], "default_function": "NONE", "grid_row": 1, "grid_col": 4 },
+        { "pin_no": "5", "label": "JP2.5", "is_power": false, "supported_functions": ["NONE", "AIU", "AIR", "AII", "PIH"], "default_function": "NONE", "grid_row": 2, "grid_col": 1 },
+        { "pin_no": "6", "label": "JP2.6", "is_power": false, "supported_functions": ["NONE", "AIU", "AIR", "AII", "PIH"], "default_function": "NONE", "grid_row": 2, "grid_col": 2 },
+        { "pin_no": "7", "label": "JP2.7", "is_power": false, "supported_functions": ["NONE", "AIU", "AIR", "AII", "PIH"], "default_function": "NONE", "grid_row": 2, "grid_col": 3 },
+        { "pin_no": "8", "label": "JP2.8", "is_power": false, "supported_functions": ["NONE", "AIU", "AIR", "AII", "PIH"], "default_function": "NONE", "grid_row": 2, "grid_col": 4 }
+      ]
+    },
+    {
+      "id": "conn-jp3",
+      "name": "JP3",
+      "pin_count": 16,
+      "pins": [
+        { "pin_no": "1", "label": "JP3.1", "is_power": true, "supported_functions": ["VBB"], "default_function": "VBB", "grid_row": 1, "grid_col": 1 },
+        { "pin_no": "2", "label": "JP3.2", "is_power": true, "supported_functions": ["GND"], "default_function": "GND", "grid_row": 1, "grid_col": 2 },
+        { "pin_no": "3", "label": "JP3.3", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 1, "grid_col": 3 },
+        { "pin_no": "4", "label": "JP3.4", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 1, "grid_col": 4 },
+        { "pin_no": "5", "label": "JP3.5", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 1, "grid_col": 5 },
+        { "pin_no": "6", "label": "JP3.6", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 1, "grid_col": 6 },
+        { "pin_no": "7", "label": "JP3.7", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 1, "grid_col": 7 },
+        { "pin_no": "8", "label": "JP3.8", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 1, "grid_col": 8 },
+        { "pin_no": "9", "label": "JP3.9", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 2, "grid_col": 1 },
+        { "pin_no": "10", "label": "JP3.10", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 2, "grid_col": 2 },
+        { "pin_no": "11", "label": "JP3.11", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 2, "grid_col": 3 },
+        { "pin_no": "12", "label": "JP3.12", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 2, "grid_col": 4 },
+        { "pin_no": "13", "label": "JP3.13", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 2, "grid_col": 5 },
+        { "pin_no": "14", "label": "JP3.14", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 2, "grid_col": 6 },
+        { "pin_no": "15", "label": "JP3.15", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 2, "grid_col": 7 },
+        { "pin_no": "16", "label": "JP3.16", "is_power": false, "supported_functions": ["NONE", "CAN_H", "CAN_L", "RS485_A", "RS485_B", "RS232_TX", "RS232_RX", "ETHERNET"], "default_function": "NONE", "grid_row": 2, "grid_col": 8 }
+      ]
+    },
+    {
+      "id": "conn-jp4",
+      "name": "JP4",
+      "pin_count": 24,
+      "pins": [
+        { "pin_no": "1", "label": "JP4.1", "is_power": true, "supported_functions": ["VBB"], "default_function": "VBB", "grid_row": 1, "grid_col": 1 },
+        { "pin_no": "2", "label": "JP4.2", "is_power": true, "supported_functions": ["GND"], "default_function": "GND", "grid_row": 1, "grid_col": 2 },
+        { "pin_no": "3", "label": "JP4.3", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 1, "grid_col": 3 },
+        { "pin_no": "4", "label": "JP4.4", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 1, "grid_col": 4 },
+        { "pin_no": "5", "label": "JP4.5", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 1, "grid_col": 5 },
+        { "pin_no": "6", "label": "JP4.6", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 1, "grid_col": 6 },
+        { "pin_no": "7", "label": "JP4.7", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 1, "grid_col": 7 },
+        { "pin_no": "8", "label": "JP4.8", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 1, "grid_col": 8 },
+        { "pin_no": "9", "label": "JP4.9", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 2, "grid_col": 1 },
+        { "pin_no": "10", "label": "JP4.10", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 2, "grid_col": 2 },
+        { "pin_no": "11", "label": "JP4.11", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 2, "grid_col": 3 },
+        { "pin_no": "12", "label": "JP4.12", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 2, "grid_col": 4 },
+        { "pin_no": "13", "label": "JP4.13", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 2, "grid_col": 5 },
+        { "pin_no": "14", "label": "JP4.14", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 2, "grid_col": 6 },
+        { "pin_no": "15", "label": "JP4.15", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 2, "grid_col": 7 },
+        { "pin_no": "16", "label": "JP4.16", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 2, "grid_col": 8 },
+        { "pin_no": "17", "label": "JP4.17", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 3, "grid_col": 1 },
+        { "pin_no": "18", "label": "JP4.18", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 3, "grid_col": 2 },
+        { "pin_no": "19", "label": "JP4.19", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 3, "grid_col": 3 },
+        { "pin_no": "20", "label": "JP4.20", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 3, "grid_col": 4 },
+        { "pin_no": "21", "label": "JP4.21", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 3, "grid_col": 5 },
+        { "pin_no": "22", "label": "JP4.22", "is_power": false, "supported_functions": ["NONE", "DIH", "DIL", "DOH", "PWML"], "default_function": "NONE", "grid_row": 3, "grid_col": 6 },
+        { "pin_no": "23", "label": "JP4.23", "is_power": true, "supported_functions": ["VBB"], "default_function": "VBB", "grid_row": 3, "grid_col": 7 },
+        { "pin_no": "24", "label": "JP4.24", "is_power": true, "supported_functions": ["GND"], "default_function": "GND", "grid_row": 3, "grid_col": 8 }
+      ]
+    },
+    {
+      "id": "conn-jp5",
+      "name": "JP5",
+      "pin_count": 6,
+      "pins": [
+        { "pin_no": "1", "label": "JP5.1", "is_power": true, "supported_functions": ["Vout"], "default_function": "Vout", "grid_row": 1, "grid_col": 1 },
+        { "pin_no": "2", "label": "JP5.2", "is_power": true, "supported_functions": ["Vout"], "default_function": "Vout", "grid_row": 1, "grid_col": 2 },
+        { "pin_no": "3", "label": "JP5.3", "is_power": true, "supported_functions": ["GND"], "default_function": "GND", "grid_row": 1, "grid_col": 3 },
+        { "pin_no": "4", "label": "JP5.4", "is_power": false, "supported_functions": ["NONE", "PWMiH", "PWMiL"], "default_function": "NONE", "grid_row": 2, "grid_col": 1 },
+        { "pin_no": "5", "label": "JP5.5", "is_power": false, "supported_functions": ["NONE", "PWMiH", "PWMiL"], "default_function": "NONE", "grid_row": 2, "grid_col": 2 },
+        { "pin_no": "6", "label": "JP5.6", "is_power": false, "supported_functions": ["NONE", "PWMiH", "PWMiL"], "default_function": "NONE", "grid_row": 2, "grid_col": 3 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "common": {
+    "action": {
+      "save": "Save",
+      "saveDirty": "Save*",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "confirm": "Confirm",
+      "search": "Search",
+      "create": "Create",
+      "import": "Import",
+      "export": "Export",
+      "edit": "Edit",
+      "apply": "Apply Config",
+      "reset": "Reset",
+      "close": "Close",
+      "next": "Next",
+      "prev": "Previous",
+      "finish": "Finish",
+      "undo": "Discard Changes",
+      "open": "Open",
+      "add": "Add",
+      "remove": "Remove"
+    },
+    "status": {
+      "normal": "Normal",
+      "conflict": "Conflict",
+      "warning": "Warning",
+      "error": "Error",
+      "loading": "Loading...",
+      "success": "Success",
+      "failed": "Failed"
+    },
+    "unit": {
+      "voltage": "V",
+      "current": "mA",
+      "resistance": "Ω",
+      "pin": "Pins",
+      "count": "items"
+    },
+    "theme": {
+      "light": "Light Mode",
+      "dark": "Dark Mode",
+      "auto": "Auto (System)"
+    },
+    "language": {
+      "label": "Language",
+      "current": "English"
+    },
+    "settings": "Settings"
+  },
+  "app": {
+    "title": "VCU CONFIG STUDIO",
+    "editing": "Editing",
+    "noProject": "No project loaded",
+    "modified": "*Modified"
+  },
+  "nav": {
+    "quickOpen": "Open Config File",
+    "quickSave": "Save Configuration to Disk",
+    "quickSaveDirtyTip": "Unsaved changes detected, click to save",
+    "quickSaveCleanTip": "No unsaved changes",
+    "quickCreate": "New VCU",
+    "quickImport": "Import VCU Description"
+  },
+  "sidebar": {
+    "searchPlaceholder": "Fuzzy search by name...",
+    "filterDoh": "DOH Count ≥",
+    "newVcu": "New VCU",
+    "importDesc": "Import Desc",
+    "viewIcon": "Icon View",
+    "viewList": "List View",
+    "deleteConfirmTitle": "Delete Confirmation",
+    "deleteConfirmMessage": "Are you sure you want to delete this VCU? This action cannot be undone.",
+    "contextEditDesc": "Edit Description",
+    "contextEditConfig": "Edit Pin Configuration",
+    "contextDelete": "Delete VCU",
+    "btnEdit": "Edit VCU Description",
+    "btnDelete": "Delete VCU"
+  },
+  "vcu": {
+    "summary": "Summary",
+    "resources": "Resources",
+    "connector": "Connector",
+    "totalPins": "Total Pins",
+    "pinNo": "Pin No.",
+    "function": "Function",
+    "range": "Range",
+    "powerBadge": "POWER",
+    "emptyTip": "Click or double click a VCU model from the left to configure",
+    "searchPinPlaceholder": "Search pin name (e.g. JP1.3)...",
+    "expandAll": "Expand All",
+    "collapseAll": "Collapse All",
+    "matched": "Matched",
+    "discardConfirm": "Are you sure you want to discard unsaved pin configuration changes?",
+    "applySuccess": "Pin configuration passed rule validation and was saved to the saved_configs directory!",
+    "rules": {
+      "ruleStatus": "Rule Status",
+      "statusNormal": "All rules verified",
+      "conflictItems": "conflict(s)",
+      "warningItems": "warning(s)",
+      "powerLocked": "Power pin is locked and non-editable",
+      "hbridgeUnpaired": "H-Bridge pins must be configured in pairs",
+      "pairedRoleExclusive": "Pin cannot support dual roles simultaneously ({pair})"
+    }
+  },
+  "descEditor": {
+    "title": "VCU Description Studio",
+    "tabBasic": "General Info",
+    "tabResources": "Connectors & Pins",
+    "id": "Model ID",
+    "nameZh": "VCU Name (Chinese)",
+    "nameEn": "VCU Name (English)",
+    "summaryZh": "Summary (Chinese)",
+    "summaryEn": "Summary (English)",
+    "connectorList": "Connector List",
+    "addConnector": "Add Connector",
+    "connectorName": "Connector Name",
+    "pinCount": "Pin Count",
+    "delConnector": "Delete Connector",
+    "delConnectorConfirm": "Are you sure to delete connector \"{name}\" and all its pin definitions?",
+    "pinSettings": "Pin Configuration",
+    "pinLabel": "Pin Label",
+    "supportedModes": "Supported Modes (Multi-select)",
+    "selectModePlaceholder": "Add mode...",
+    "defaultMode": "Default Mode",
+    "powerModeTip": "Power ports are isolated; no other signal modes can be added",
+    "saveDescSuccess": "VCU description updated successfully!",
+    "validationTitle": "Unconfigured Pins Detected",
+    "validationDesc": "The following pins have not been explicitly configured or are missing default modes. Please configure them or assign as NC (Not Connected):",
+    "emptySupported": "No supported modes configured",
+    "emptyDefault": "Default mode not selected",
+    "ncBadge": "NC (Floating)"
+  },
+  "descValidation": {
+    "modalTitle": "VCU Description Validation Failed",
+    "summaryError": "{count} file(s) failed automotive specification validation and cannot be loaded:",
+    "fileLabel": "Invalid File",
+    "errorDetail": "Violation Details",
+    "rulePowerConflict": "Pin {pin} power mode conflicts with signal modes",
+    "rulePairConflict": "Pin {pin} violates dual-role exclusion (contains both {roleA} and {roleB})",
+    "ruleEmptyModes": "Pin {pin} has no supported modes defined",
+    "ruleInvalidDefault": "Pin {pin} default mode ({defaultMode}) is not in its supported list",
+    "ruleConnectorPinsMismatch": "Connector {conn} declared pin count ({count}) mismatch actual pins ({actual})",
+    "ruleDuplicatePinLabel": "Duplicate pin label detected: {pin}",
+    "locLine": "Line {line}",
+    "jumpTip": "Please fix the violations before importing or restarting"
+  },
+  "export": {
+    "excel": "Export Excel",
+    "json": "Export JSON",
+    "csv": "Export CSV",
+    "sheetName": "PinMapping"
+  },
+  "uds": {
+    "wizardTitle": "UDS Deployment Wizard (Phase 2)",
+    "deploy": "Deploy UDS",
+    "step1": "Select CAN Hardware & Channel",
+    "step2": "Baud Rate Setup",
+    "step3": "Protocol Verification",
+    "step4": "Flash Configuration",
+    "channel": "CAN Channel",
+    "baudRate": "CAN Baud Rate",
+    "statusIdle": "Idle",
+    "statusFlashing": "Flashing payload via UDS...",
+    "statusCompleted": "Completed successfully",
+    "startFlash": "Start Flashing"
+  },
+  "settings": {
+    "title": "System Settings",
+    "workdir": "Workspace Directory",
+    "autoSave": "Auto-save configuration",
+    "protocolVersion": "UDS Protocol Stack Version"
+  },
+  "problems": {
+    "title": "Problems & Validation List",
+    "empty": "No pin conflicts or configuration warnings detected",
+    "errorCount": "error(s)",
+    "warningCount": "warning(s)",
+    "jumpTip": "Click any item to jump directly to the target pin",
+    "clickToLocate": "Click to locate Pin"
+  },
+  "notice": {
+    "openSuccess": "File opened successfully",
+    "saveSuccess": "Save successful",
+    "createTip": "Trigger create VCU workflow",
+    "importTip": "Trigger import VCU description workflow"
+  }
+}

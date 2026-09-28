@@ -1,0 +1,53 @@
+# Node.js 依赖与构建产物
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Vite 前端产物
+dist/
+dist-ssr/
+*.local
+
+# Rust & Cargo 构建产物
+target/
+Cargo.lock
+
+# Tauri v2 自动生成产物
+src-tauri/target/
+desktop/src-tauri/target/
+*.app
+*.exe
+*.msi
+*.deb
+*.rpm
+
+# 编辑器与 IDE 临时配置
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# 临时测试文件、转储与日志
+*.log
+*.trc
+*.asc
+*.blf
+*.mf4
+core.zip
+*.tmp
+*.bak
+
+# 环境变量文件
+.env
+.env.*
+!.env.example

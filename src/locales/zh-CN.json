@@ -1,0 +1,189 @@
+{
+  "common": {
+    "action": {
+      "save": "保存",
+      "saveDirty": "保存*",
+      "cancel": "取消",
+      "delete": "删除",
+      "confirm": "确定",
+      "search": "搜索",
+      "create": "新建",
+      "import": "导入",
+      "export": "导出",
+      "edit": "编辑",
+      "apply": "应用配置",
+      "reset": "重置",
+      "close": "关闭",
+      "next": "下一步",
+      "prev": "上一步",
+      "finish": "完成",
+      "undo": "取消修改",
+      "open": "打开",
+      "add": "添加",
+      "remove": "移除"
+    },
+    "status": {
+      "normal": "正常",
+      "conflict": "冲突",
+      "warning": "警告",
+      "error": "错误",
+      "loading": "加载中...",
+      "success": "成功",
+      "failed": "失败"
+    },
+    "unit": {
+      "voltage": "V",
+      "current": "mA",
+      "resistance": "Ω",
+      "pin": "针脚",
+      "count": "个"
+    },
+    "theme": {
+      "light": "浅色模式",
+      "dark": "深色模式",
+      "auto": "跟随系统"
+    },
+    "language": {
+      "label": "语言",
+      "current": "中文"
+    },
+    "settings": "系统设置"
+  },
+  "app": {
+    "title": "VCU CONFIG STUDIO",
+    "editing": "正在编辑",
+    "noProject": "未加载配置工程",
+    "modified": "*已修改"
+  },
+  "nav": {
+    "quickOpen": "打开配置文件",
+    "quickSave": "保存配置落盘",
+    "quickSaveDirtyTip": "检测到未保存配置，点击保存落盘",
+    "quickSaveCleanTip": "无未保存修改",
+    "quickCreate": "新建 VCU",
+    "quickImport": "导入 VCU 描述文件"
+  },
+  "sidebar": {
+    "searchPlaceholder": "按名称模糊搜索VCU...",
+    "filterDoh": "DOH 数量 ≥",
+    "newVcu": "新建 VCU",
+    "importDesc": "导入描述",
+    "viewIcon": "图标视图",
+    "viewList": "列表视图",
+    "deleteConfirmTitle": "删除确认",
+    "deleteConfirmMessage": "确定要删除选中的 VCU 吗？此操作无法撤销。",
+    "contextEditDesc": "编辑描述文件",
+    "contextEditConfig": "编辑端口配置",
+    "contextDelete": "删除 VCU",
+    "btnEdit": "编辑 VCU 描述",
+    "btnDelete": "删除 VCU"
+  },
+  "vcu": {
+    "summary": "简介",
+    "resources": "资源配置",
+    "connector": "连接器",
+    "totalPins": "总针脚",
+    "pinNo": "引脚编号",
+    "function": "功能分配",
+    "range": "量程",
+    "powerBadge": "POWER",
+    "emptyTip": "请在左侧列表中单击或双击选择一个 VCU 型号以开始配置",
+    "searchPinPlaceholder": "按端口名称搜索 (如 JP1.3)...",
+    "expandAll": "展开全部",
+    "collapseAll": "折叠全部",
+    "matched": "匹配",
+    "discardConfirm": "确定要放弃未保存的端口配置修改吗？",
+    "applySuccess": "引脚配置已通过车规规则校验，并成功落盘写入本地 saved_configs 目录！",
+    "rules": {
+      "ruleStatus": "规则状态",
+      "statusNormal": "规则检查正常",
+      "conflictItems": "项冲突",
+      "warningItems": "个警告项",
+      "powerLocked": "电源端口已锁定，禁止编辑",
+      "hbridgeUnpaired": "H桥驱动引脚未成对配置",
+      "pairedRoleExclusive": "引脚不可同时支持对偶角色 ({pair})"
+    }
+  },
+  "descEditor": {
+    "title": "VCU 描述文件编辑器",
+    "tabBasic": "基础属性",
+    "tabResources": "连接器与端口资源",
+    "id": "型号标识 (ID)",
+    "nameZh": "VCU 名称 (中文)",
+    "nameEn": "VCU Name (English)",
+    "summaryZh": "简介描述 (中文)",
+    "summaryEn": "Summary (English)",
+    "connectorList": "连接器列表",
+    "addConnector": "新增连接器",
+    "connectorName": "连接器名称",
+    "pinCount": "针脚数量",
+    "delConnector": "删除连接器",
+    "delConnectorConfirm": "确定删除连接器 \"{name}\" 及其所有引脚定义吗？",
+    "pinSettings": "Pin 详细定义",
+    "pinLabel": "引脚标识",
+    "supportedModes": "支持的模式列表 (多选)",
+    "selectModePlaceholder": "添加支持模式...",
+    "defaultMode": "默认工作模式",
+    "powerModeTip": "电源端口已锁定，不可添加其他信号模式",
+    "saveDescSuccess": "VCU 描述文件已更新！",
+    "validationTitle": "存在未完成显式配置的引脚",
+    "validationDesc": "以下端口尚未显式配置支持的模式或默认模式，请先配置完整或分配为 NC (悬空)：",
+    "emptySupported": "未分配支持模式",
+    "emptyDefault": "未设置默认模式",
+    "ncBadge": "NC 悬空"
+  },
+  "descValidation": {
+    "modalTitle": "VCU 描述文件校验失败",
+    "summaryError": "发现 {count} 个文件不符合车规描述规范，已阻止载入：",
+    "fileLabel": "异常文件",
+    "errorDetail": "校验不合规明细",
+    "rulePowerConflict": "引脚 {pin} 电源模式与普通信号模式冲突",
+    "rulePairConflict": "引脚 {pin} 违背对偶互斥规则（同时存在 {roleA} 与 {roleB}）",
+    "ruleEmptyModes": "引脚 {pin} 未分配任何支持的模式列表",
+    "ruleInvalidDefault": "引脚 {pin} 默认模式 ({defaultMode}) 不在支持的模式列表中",
+    "ruleConnectorPinsMismatch": "连接器 {conn} 声明针脚数 ({count}) 与实际定义的针脚数 ({actual}) 不一致",
+    "ruleDuplicatePinLabel": "检测到重复引脚定义标识: {pin}",
+    "locLine": "行 {line}",
+    "jumpTip": "请修正后重新导入或重启应用"
+  },
+  "export": {
+    "excel": "导出 Excel",
+    "json": "导出 JSON",
+    "csv": "导出 CSV",
+    "sheetName": "引脚分配表"
+  },
+  "uds": {
+    "wizardTitle": "UDS 配置下发向导 (第二阶段预留)",
+    "deploy": "UDS 下发配置",
+    "step1": "选择 CAN 设备与通道",
+    "step2": "波特率配置",
+    "step3": "固件与协议栈校验",
+    "step4": "执行下发刷写",
+    "channel": "CAN 硬件通道",
+    "baudRate": "CAN 波特率",
+    "statusIdle": "空闲等待",
+    "statusFlashing": "正在通过 UDS 传输数据块...",
+    "statusCompleted": "刷写完成",
+    "startFlash": "开始下发"
+  },
+  "settings": {
+    "title": "系统环境设置",
+    "workdir": "工程文件保存路径",
+    "autoSave": "自动暂存配置文件",
+    "protocolVersion": "UDS 诊断协议栈版本"
+  },
+  "problems": {
+    "title": "规则冲突与校验清单",
+    "empty": "未检测到任何引脚冲突或配置告警",
+    "errorCount": "个错误",
+    "warningCount": "个警告",
+    "jumpTip": "点击错误条目直接跳转至对应 Pin 脚",
+    "clickToLocate": "点击定位目标 Pin"
+  },
+  "notice": {
+    "openSuccess": "打开文件成功",
+    "saveSuccess": "保存成功",
+    "createTip": "触发新建 VCU 描述流程",
+    "importTip": "触发导入 VCU 描述文件流程"
+  }
+}
