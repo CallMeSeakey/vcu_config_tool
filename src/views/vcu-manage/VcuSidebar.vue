@@ -119,7 +119,7 @@ import type { VcuDescription } from '@/types/vcu';
 import VcuCardView from './VcuCardView.vue';
 import VcuTableView from './VcuTableView.vue';
 import ConfirmModal from '@/components/common/ConfirmModal.vue';
-import { Plus, Upload, Search, LayoutGrid, List, Edit3, Trash2 } from 'lucide-vue-next';
+import { Plus, Upload, Search, LayoutGrid, List, Edit3, Trash2 } from '@lucide/vue';
 
 const emit = defineEmits<{
   (e: 'request-create'): void;

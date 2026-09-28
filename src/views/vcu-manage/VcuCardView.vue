@@ -49,7 +49,7 @@
 import { useI18n } from 'vue-i18n';
 import { useVcuStore } from '@/stores/vcuStore';
 import { resolveI18nText, type VcuDescription } from '@/types/vcu';
-import { Edit3, Trash2 } from 'lucide-vue-next';
+import { Edit3, Trash2 } from '@lucide/vue';
 
 defineProps<{ list: VcuDescription[] }>();
 defineEmits<{

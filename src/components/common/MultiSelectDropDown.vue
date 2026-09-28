@@ -62,7 +62,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import type { FunctionType } from '@/types/vcu';
 import { POWER_MODES } from '@/utils/pinRules';
-import { X, ChevronDown, Check } from 'lucide-vue-next';
+import { X, ChevronDown, Check } from '@lucide/vue';
 
 const props = defineProps<{
   modelValue: FunctionType[];

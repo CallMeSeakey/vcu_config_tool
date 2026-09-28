@@ -65,7 +65,7 @@
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import BaseModal from '@/components/common/BaseModal.vue';
-import { AlertTriangle, FileCode } from 'lucide-vue-next';
+import { AlertTriangle, FileCode } from '@lucide/vue';
 
 export interface DescValidationError {
   file_name: string;

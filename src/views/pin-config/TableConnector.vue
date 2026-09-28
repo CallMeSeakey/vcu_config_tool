@@ -77,7 +77,7 @@ import { ref, nextTick } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useVcuStore } from '@/stores/vcuStore';
 import type { PinDef } from '@/types/vcu';
-import { ChevronRight } from 'lucide-vue-next';
+import { ChevronRight } from '@lucide/vue';
 
 const props = defineProps<{ searchKeyword: string }>();
 const { t } = useI18n();

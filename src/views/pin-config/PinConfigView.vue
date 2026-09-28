@@ -96,7 +96,7 @@ import * as XLSX from 'xlsx';
 import GraphicConnector from './GraphicConnector.vue';
 import TableConnector from './TableConnector.vue';
 import UdsWizardModal from '@/views/modals/UdsWizardModal.vue';
-import { Search, FileSpreadsheet, FileCode, Send, Cpu, LayoutGrid, List, Check, Undo } from 'lucide-vue-next';
+import { Search, FileSpreadsheet, FileCode, Send, Cpu, LayoutGrid, List, Check, Undo } from '@lucide/vue';
 
 const emit = defineEmits<{(e: 'validation-failed', errors: string[]): void; (e: 'apply-success'): void;}>();
 

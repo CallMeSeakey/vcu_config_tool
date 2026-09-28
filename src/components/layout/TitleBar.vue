@@ -120,7 +120,7 @@ import { resolveI18nText } from '@/types/vcu';
 import { 
   Menu, Languages, Sun, Moon, Laptop, Settings, 
   FolderOpen, Save, FilePlus, UploadCloud 
-} from 'lucide-vue-next';
+} from '@lucide/vue';
 
 const emit = defineEmits<{
   (e: 'open-settings'): void;

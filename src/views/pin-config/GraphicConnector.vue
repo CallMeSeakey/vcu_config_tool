@@ -121,7 +121,7 @@ import { ref, computed, nextTick } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useVcuStore } from '@/stores/vcuStore';
 import type { PinDef } from '@/types/vcu';
-import { Layers, ChevronRight, ChevronsDown, ChevronsUp } from 'lucide-vue-next';
+import { Layers, ChevronRight, ChevronsDown, ChevronsUp } from '@lucide/vue';
 
 const props = defineProps<{ searchKeyword: string }>();
 const { t } = useI18n();

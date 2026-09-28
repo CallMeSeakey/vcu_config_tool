@@ -70,7 +70,7 @@
 import { useI18n } from 'vue-i18n';
 import { useVcuStore } from '@/stores/vcuStore';
 import BaseModal from '@/components/common/BaseModal.vue';
-import { AlertCircle, AlertTriangle, CheckCircle2, ArrowRight } from 'lucide-vue-next';
+import { AlertCircle, AlertTriangle, CheckCircle2, ArrowRight } from '@lucide/vue';
 
 defineProps<{ modelValue: boolean }>();
 const emit = defineEmits<{

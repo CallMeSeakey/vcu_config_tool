@@ -298,7 +298,7 @@ import BaseModal from '@/components/common/BaseModal.vue';
 import MultiSelectDropdown from '@/components/common/MultiSelectDropdown.vue';
 import type { VcuDescription, ConnectorDef, PinDef, FunctionType } from '@/types/vcu';
 import { ALL_MODES, applyPinModeRules, isPinConfigured } from '@/utils/pinRules';
-import { FileText, Layers, Plus, Trash2, Save, AlertTriangle, AlertCircle, CheckSquare } from 'lucide-vue-next';
+import { FileText, Layers, Plus, Trash2, Save, AlertTriangle, AlertCircle, CheckSquare } from '@lucide/vue';
 
 const props = defineProps<{ modelValue: boolean; vcu: VcuDescription | null }>();
 const emit = defineEmits<{(e: 'update:modelValue', val: boolean): void}>();
